@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formularios</title>
+	</head>
+	<body>
+		<form action="formularios.html" method="get">
+			<div>
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>	
+			</div>
+			<div>
+				<label for="apellido">Apellido</label>
+				<input minlength="3" type="text" name="apellido" id="apellido" placeholder="Apellido" required><!-- el id siempre debe tener el mismo nombre que el for de label, para poder relacionarlos -->
+			</div>
+			<div>
+				<label for="edad">Edad</label>
+				<input min="18" max="90" type="number" name="edad" id="edad" placeholder="Edad" value="18" required>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="text" name="email" id="email" placeholder="Email" required> 
+			</div>
+			<div>
+				<label for="nacimiento">Fecha de Nacimiento</label>
+				<input type="date" name="nacimiento" id="nacimiento" required>
+			</div>
+			<div>
+				<label for="algoconrango">Algo con rango</label>
+				<input type="range" name="algoconrango" id="algoconrango" required>
+			</div>
+			<div>
+				<label for="mensaje">Mensaje</label>
+				<textarea id="mensaje" placeholder="Escriba un comentario"></textarea><!--para agregar un area de texto como comentario-->
+			</div>
+			<div>
+				<button type="submit"><!--Para enviar datos ingresados-->
+					Enviar
+				</button>
+				<button type="reset">
+					Limpiar
+				</button><!--limpia todos los campos del formulario-->
+				<button type="button"><!--este boton se modifica con javascript, no hace nada por el momento -->
+					No hago nada
+				</button>
+
+			</div>
+			<div>
+				<input type="checkbox" name="checkbox" id="terminosycondiciones" checked="true" required>
+				<label for="terminosycondiciones">Acepta terminos y condiciones</label>
+			</div>
+			<div>
+				<input type="radio" name="terminosycondiciones" id="terminosycondiciones-si">
+				<label for="terminosycondiciones-si">Si</label>
+
+				<input type="radio" name="terminosycondiciones" id="terminosycondiciones-no">
+				<label for="terminosycondiciones-no">No</label>
+			</div>
+			<div>
+				<input type="file" name="foto">
+			</div>
+
+			<div>
+				<label for="algoqueseleccione">Seleccione una opción</label>
+				<select name="algoqueseleccione" id="algoqueseleccione">
+					<option disabled="true" selected="true">Selecione una opcion</option>
+					<option>opcion1</option>
+					<option>opcion2</option>
+					<option>opcion3</option>
+					<option>opcion4</option>
+					<option>opcion5</option>
+				</select>
+			</div>
+
+						
+		</form>
+
+		
+		<footer><center>pie de pagina</center></footer>
+
+	</body>
+</html>

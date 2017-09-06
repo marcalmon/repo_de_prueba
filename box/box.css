@@ -1,0 +1,16 @@
+.caja{
+	width: 200px;
+	display: inline-block;
+	border: 1px solid blue;
+	vertical-align: top;
+	height: 200px;
+	overflow: hidden;
+}
+
+span{
+	visibility: hidden;
+}
+
+span:hover{
+
+}

@@ -1,0 +1,52 @@
+/*p{
+	color: pink;
+}
+
+.destacado{
+	color: yellow;
+}
+
+h3.destacado{
+	color: yellow;
+}
+
+Concatenación
+h3; .destacado, p, a{
+
+}
+
+Selector descendente
+.destacado h3{/*Afecta al último elemento que esta adentro 
+	de una etiqueta que tiene como clase destacado.
+
+}
+
+.general{
+	color: pink;
+	font-size: 24px;
+}
+
+.resaltado{
+	font-weight: bold;
+}*/
+
+/*Selector descendente
+div a{
+	color: orange;
+}
+
+Selector de hijos
+div > a{
+	color: green;
+}*/
+
+div{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	border-style: double;
+	border-width: 5px;
+	border-color: red;
+	border-radius: 50%;
+}
+
