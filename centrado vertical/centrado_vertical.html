@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Centrado Vertical</title>
+	<style>
+		/*.horizontal{
+			background: cyan;
+			height: 300px;
+			line-height: 300px; sirve para centrar una linea
+			width: 60%;
+			margin: auto;
+			padding:120px;
+			text-align: center;
+
+		}*/
+		.padre{
+			background: green;
+			width: 500px;
+			height: 500px;
+			position: relative;
+			/*padding:30px;*/
+		}
+
+		.hijo{
+			width: 250px;
+			height: 250px;
+			background: orange;
+			position:absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: 25%;
+			/*margin: 0 auto;*/
+		}
+	</style>
+</head>
+<body>
+	<!--<div class="horizontal">
+		<p>Dale, centrame</p>
+		<p>Yo Tamabién</p>
+	</div>-->
+
+	<div class="padre">
+		<div class="hijo"></div>
+	</div>
+
+</body>
+</html>
